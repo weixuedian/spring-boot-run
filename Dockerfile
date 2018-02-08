@@ -7,8 +7,8 @@ ENV  ENTRY_FILE=/opt/entry.sh
 
 COPY entry.sh ${ENTRY_FILE}
 
-UN chmod +x ${ENTRY_FILE}
+RUN chmod +x ${ENTRY_FILE}
+
 
 # 容器启动命令,默认只有一个CMD
-
 CMD ["/opt/entry.sh"]
