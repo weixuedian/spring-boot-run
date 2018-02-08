@@ -5,4 +5,5 @@ MAINTAINER weixuedian <weixuedian@qq.com>
 
 
 # 容器启动命令,默认只有一个CMD
-CMD ["java", "-jar", "usr/app/app.jar"]
+
+CMD ["/opt/entry.sh"]
