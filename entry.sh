@@ -3,7 +3,7 @@ echo "********************`date`********************"
 
 echo ">>>>>>>>>>>>>>>>>>>start set hosts <<<<<<<<<<<"
 cp /etc/hosts /etc/hosts.temp
-sed -i "s/.*$(hostname)/${ip} $(hostname)/" /etc/hosts.temp
+sed -i "s/.*$(hostname)/172.27.0.11 $(hostname)/" /etc/hosts.temp
 cat /etc/hosts.temp > /etc/hosts
 
 echo /etc/hosts
